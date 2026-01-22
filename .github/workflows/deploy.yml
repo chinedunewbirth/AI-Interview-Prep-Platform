@@ -22,6 +22,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -e ".[test]"
+        pip install pytest-cov codecov
     
     - name: Run tests
       run: |
